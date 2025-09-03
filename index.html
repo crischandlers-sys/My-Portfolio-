@@ -10,6 +10,18 @@
     body {
       font-family: Arial, sans-serif;
     }
+    /* Heartbeat hover effect (once only) */
+.heartbeat:hover {
+  animation: heartbeat 0.6s ease-in-out 1;
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.1); }
+  50% { transform: scale(0.95); }
+  75% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
     
     #home {
       background: linear-gradient(to right, #dbeafe, #f3e8ff);
@@ -88,11 +100,11 @@
         </div>
         <div class="col-md-3 text-center">
           <!-- 🔽 Palitan mo 'about1.png' -->
-          <img src="about1.jpg.jpeg" alt="About Picture 1" class="img-fluid">
+          <img src="about1.jpg.jpeg" alt="About Picture 1" class="heartbeat">
         </div>
         <div class="col-md-3 text-center">
           <!-- 🔽 Palitan mo 'about2.png' -->
-          <img src="about2.jpg.jpeg" alt="About Picture 2" class="img-fluid">
+          <img src="about2.jpg.jpeg" alt="About Picture 2" class="heartbeat">
         </div>
       </div>
     </div>
