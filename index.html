@@ -10,6 +10,21 @@
     body {
       font-family: Arial, sans-serif;
     }
+    /* Hover pulse effect */
+  .hover-pulse {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .hover-pulse:hover {
+    animation: heartbeat 1s infinite;
+  }
+
+  @keyframes heartbeat {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.1); }
+    40% { transform: scale(0.95); }
+    60% { transform: scale(1.1); }
+    100% { transform: scale(1); }
     #home {
       background: linear-gradient(to right, #dbeafe, #f3e8ff);
       min-height: 100vh;
@@ -87,11 +102,11 @@
         </div>
         <div class="col-md-3 text-center">
           <!-- 🔽 Palitan mo 'about1.png' -->
-          <img src="about1.jpg.jpeg" alt="About Picture 1" class="img-fluid">
+          <img src="about1.jpg.jpeg" alt="About Picture 1" class="img-fluid" class="hover-pulse">
         </div>
         <div class="col-md-3 text-center">
           <!-- 🔽 Palitan mo 'about2.png' -->
-          <img src="about2.jpg.jpeg" alt="About Picture 2" class="img-fluid">
+          <img src="about2.jpg.jpeg" alt="About Picture 2" class="img-fluid" class="hover-pulse">
         </div>
       </div>
     </div>
@@ -105,7 +120,7 @@
         <div class="col-md-6">
           <div class="card h-100 shadow-sm">
             <!-- 🔽 Palitan mo 'project1.png' -->
-            <img src="project.png.png" class="card-img-top" alt="Project Picture">
+            <img src="project.png.png" class="card-img-top" alt="Project Picture" class="hover-pulse">
             <div class="card-body text-center">
               <h5 class="card-title">My Project</h5>
               <p class="card-text">ServeOnclick:A web-based catering reservation with inventory and sales management system for M.I Sevilla Resort.</p>
