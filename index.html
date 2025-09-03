@@ -10,17 +10,15 @@
     body {
       font-family: Arial, sans-serif;
     }
-    /* Heartbeat hover effect (once only) */
-.heartbeat:hover {
-  animation: heartbeat 0.6s ease-in-out 1;
+    /* Simple hover zoom effect */
+.heartbeat {
+  transition: transform 0.3s ease; /* smooth animation */
 }
 
-@keyframes heartbeat {
-  0% { transform: scale(1); }
-  25% { transform: scale(1.1); }
-  50% { transform: scale(0.95); }
-  75% { transform: scale(1.05); }
-  100% { transform: scale(1); }
+.heartbeat:hover {
+  transform: scale(1.1); /* lalaki ng 10% kapag hover */
+}
+
 }
     .about-pic {
   max-width: 250px;  /* maximum lapad */
