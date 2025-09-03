@@ -20,13 +20,19 @@
 }
 
 }
-    .about-pic {
-  max-width: 250px;  /* maximum lapad */
-  height: auto;      /* auto adjust ang taas */
+    * About pictures (parehas pantay) */
+.about-pic {
+  width: 200px;          /* parehong laki */
+  height: auto;
   display: block;
-  margin: 0 auto;    /* naka-center */
-  border-radius: 10px; /* optional: rounded edges */
-    }
+  margin: 15px auto;     /* may pagitan at nasa gitna */
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* smooth animation */
+}
+
+.about-pic:hover {
+  transform: scale(1.1); /* lalaki lang ng konti pag hover */
+}
     
     #home {
       background: linear-gradient(to right, #dbeafe, #f3e8ff);
@@ -105,11 +111,11 @@
         </div>
         <div class="col-md-3 text-center">
           <!-- 🔽 Palitan mo 'about1.png' -->
-          <img src="about1.jpg.jpeg" alt="About Picture 1" class="heartbeat about-pic">
+          <img src="about1.jpg.jpeg" alt="About Picture 1" class="about-pic">
         </div>
         <div class="col-md-3 text-center">
           <!-- 🔽 Palitan mo 'about2.png' -->
-          <img src="about2.jpg.jpeg" alt="About Picture 2" class="heartbeat about-pic">
+          <img src="about2.jpg.jpeg" alt="About Picture 2" class="about-pic">
         </div>
       </div>
     </div>
